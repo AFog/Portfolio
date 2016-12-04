@@ -1,56 +1,101 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-	<title>Aaron Fogarty CV</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.js"></script>
-		<script src="jquery/main.js"></script>
-	<body >
+<head>
+<title>Aaron Fogarty CV</title>
+   <title>Aaron Fogarty CV</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="js/jquery.js"></script>
+    <script src="jquery/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!--role ="navigation" was added-->
-		  <div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">		
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    
+</head>
+<body>
 
-			  </button>
-			  <a class="navbar-brand" href="#1">Aaron Fogarty</a>
-			</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbarcollapse"> <!--role ="navigation" was added-->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" id="dropdown" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="myNavbar">
+          </button>
+          <a class="navbar-brand" href="#1">Aaron Fogarty</a>
+        </div>
 
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#1">Summary</a></li>
-				<li><a href="#2">Education</a></li>
-				<li><a href="#3">Projects</a></li>
-				<li><a href="#4">Experience</a></li>
-			  </ul>
-			</div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-		
-		<div id="1" style="min-height:1000px;background:grey;">
-		</div>
-		<div id="2" style="min-height:1000px;background:white;">
-		</div>
-		<div id="3" style="min-height:1000px;background:grey;">
-		</div>
-		<div id="4" style="min-height:1000px;background:white;">
-		</div>
-	
-		
-		
-	</body>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="summary" style="min-height:1000px;background:grey;">
+    </div>
+
+   <!-- Carousel -->
+    <div id="education" class="carousel slide">
+          <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#education" data-slide-to="0" class="active"></li>
+        <li data-target="#education" data-slide-to="1"></li>
+        <li data-target="#education" data-slide-to="2"></li>
+      </ol>
+        
+             <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/blackStar1.jpg" alt="BS1" class="img-responsive">
+        </div>
+
+        <div class="item">
+          <img src="images/blackStar2.jpg" alt="BS2" class="img-responsive">
+        </div>
+
+        <div class="item">
+          <img src="images/blackStar3.jpg" alt="BS3" class="img-responsive">
+        </div>
+      </div>
+            <!-- Left and right controls -->
+      <a class="left carousel-control" href="#education" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        
+      </a>
+        
+      <a class="right carousel-control" href="#education" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+        
+    </div>
+
+
+    <div id="projects" style="min-height:1000px;background:grey;">
+    </div>
+    
+    <div id="experience" style="min-height:1000px;background:white;">
+    </div>
+
+
+
+</body>
 </html>
