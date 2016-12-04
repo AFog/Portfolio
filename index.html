@@ -1,164 +1,54 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <!-- ensure proper rendering and touch zooming, this line was added:
-content="width=device-width sets the width of the page to follow the screen-width of the device the user is using
-initial-scale=1 sets the initial zoom level when the page is first loaded
-  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  
-  <style>
-  .col-xs-6 {
-  height: 100px;
-  background-color: purple;
-  color: white;
-  text-align:center;
-  border: 2px solid black;
-  }
-  .col-sm-6{
-  height: 100px;
-  background-color: yellow;
-  color: white;
-  text-align:center;
-  border: 2px solid black;
-  }
-  .col-md-6{
-  height: 100px;
-  background-color: orange;
-  color: white;
-  text-align:center;
-  border: 2px solid black;
-  }
-    .col-xs-2{
-  height: 100px;
-  background-color: yellow;
-  color: balck;
-  text-align:center;
-  border: 2px solid black;
-  }
-  .col-xs-4{
-  height: 100px;
-  background-color: orange;
-  color: black;
-  text-align:center;
-  border: 2px solid black;
-  }
-    .col-sm-4{
-  height: 100px;
-  background-color: yellow;
-  color: black;
-  text-align:center;
-  border: 2px solid black;
-  }
-    .col-md-4{
-  height: 100px;
-  background-color: orange;
-  color: black;
-  text-align:center;
-  border: 2px solid black;
-  }
-     .col-sm-12{
-  height: 100px;
-  background-color: yellow;
-  color: black;
-  text-align:center;
-  border: 2px solid black;
-  }
-  </style>
-  
-</head>
-<body>
-<div class="container-fluid">
-  <h1>Aaron Fogarty</h1>
-  <p>aaron.fogarty@gmail.com</p> 
-</div>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="jquery/main.js"></script>
+		</head>
+	<body >
 
-<!-- part 1
- <div class="container-fluid">
-  
-  <div class="row">
-  	  <div class="col-xs-6">.col-xs-6</div>
-	  <div class="col-xs-6">.col-xs-6</div>
-
-  </div>
-    <div class="row">
-  	  <div class="col-sm-6">.col-sm-6</div>
-  	  <div class="col-sm-6">.col-sm-6</div>
-	</div>
 	
-    <div class="row">
-	  <div class="col-md-6">.col-md-3</div>
-  	  <div class="col-md-6">.col-md-3</div>
-	</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!--role ="navigation" was added-->
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#1">Aaron Fogarty</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#1">Section 1</a></li>
+				<li><a href="#2">Section 2</a></li>
+				<li><a href="#3">Section 3</a></li>
+				<li><a href="#4">Section 4</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div id="1" style="min-height:1000px;background:grey;">
+		</div>
+		<div id="2" style="min-height:1000px;background:blue;">
+		</div>
+		<div id="3" style="min-height:1000px;background:white;">
+		</div>
+		<div id="4" style="min-height:1000px;background:blue;">
+		</div>
 	
- </div>
- -->
- 
- <!-- part 2 push pull 
-
- <div class="container-fluid">
- 
-  <div class="row">
-  	  <div class="col-xs-4">.col-xs-4</div>
-	  <div class="col-xs-2">.col-xs-2</div>
-	  <div class="col-xs-4 col-md-pull-2">.col-xs-4</div>
-	  <div class="col-xs-2 col-md-pull-4">.col-xs-2</div>
-  </div>
- </div>
-   -->
-    <!-- part 3 offset 
-
-<div class="container-fluid">
- 
-  <div class="row">
-  	  <div class="col-sm-4">.col-sm-4</div>
-	  <div class="col-sm-4">.col-sm-4</div>
-	  <div class="col-sm-4">.col-sm-4</div>
-  </div>
-  
-   <div class="row">
-  	  <div class="col-md-4 col-md-offset-4">Demonstrating offset class</div>
-  </div>
-  
-  
- </div>
- -->
-
- <!-- part 4 Responsive Utility classes
- 
- <div class="container-fluid">
- 
-  <div class="row">
-  	  <div class="col-xs-6">
-	  <h3 class="visible-xs"> XS Screen</h3>
-	  <h3 class="visible-sm"> SM Screen</h3>
-	  <h3 class="visible-md"> MD Screen</h3>
-	  <h3 class="visible-lg"> LG Screen</h3>
-	  </div>
-  </div>
- 
- </div>
--->
-
-
-<div>
-<img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/054/201/194d3a1.jpg" width="200" height="200" alt="Aaron Fogarty">
-</div>
-
-<div class="container-fluid">
- 
-  <div class="row">
-  	  <div class="col-sm-12">
-	  <h3 class="hidden-sm">  </h3>
-	  </div>
-  </div>
- 
- </div>
-</body>
+		
+		
+	</body>
 </html>
