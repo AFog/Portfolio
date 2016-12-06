@@ -73,12 +73,12 @@
                         </div>
                       
                      </h3>  
-                     <h1 style="color:black;">Software Developer</h1>
+                     <h1 style="color: #222222;">Software Developer</h1>
                  </div><!--end of jumbotron -->
         
 <!-- DIV TWO PROJECTS CAROUSEL-->
     <!-- Carousel -->
-    <div id="education" class="carousel slide">
+    <div id="education" class="carousel slide" data-interval="false">
     <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#education" data-slide-to="0" class="active"></li>
@@ -156,7 +156,6 @@
         
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/bootstrap.js"></script>
-
             
         <script>
         // Get the modal
@@ -180,6 +179,12 @@
                 modal.style.display = "none";
             }
       
+        </script>
+        
+        <script>
+        $(document).ready(function() {      
+               $('.carousel').carousel('pause');
+         });
         </script>
       
     </body>
