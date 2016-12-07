@@ -27,14 +27,14 @@ body {
 
 .contacttext{
     font-size: 1.5em;
-    color:black;
+    color:darkgrey;
     /*color:rgb(34,34,34);*/
 
 }
 
 .projecttext{
     font-size: 1.5em;
-    color:black;
+    color:darkgrey;
     /*color:rgb(34,34,34);*/
 
 }
@@ -49,6 +49,12 @@ body {
 
 }
 
+.footer{
+    text-align:center; 
+    min-height:100px;
+    color:darkgrey;
+    font-style:italic;
+}
 
 /*----------------------------------------------------- Jumbo parallax -------------------------- */
 .parallax {
@@ -186,7 +192,7 @@ top: 40px;
 }
 .modal-header,
 .btn-custom {
-	background: grey;
+	background: darkgrey;
 	color: #FFF;
 	/* margin-right: 10px; */
 }
