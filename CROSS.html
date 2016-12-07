@@ -5,6 +5,7 @@
 
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+
             <link rel="stylesheet" href="css/bootstrap.min.css"/>
             <link rel="stylesheet" href="css/style.css" />
     
@@ -178,100 +179,23 @@
                                     </div>
                                   </div><!-- end of row-->
                                   <br><!-- break for a little spacing-->
-                                  
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <h3>CONTACT</h3>
+                                      <p> </p>
+                                    </div>
+                                  </div><!--end of row-->
                                 </div><!--end of container-->
                 <!--PROJECTS END-->
 
                 <!--RESULTS START-->
-                              <div id="results_tab" class="container" style="z-index:150;">
+                              <div id="projects" class="container">
 
                                   <br><!-- break for a little spacing-->
                                
-                                  <br><!-- break for a little spacing-->
-                                 
-                                      <h3>RESULTS</h3>
                                   
-
-                            <!--ACCORDION START-->  
-                                <div id="results" class="tab-pane " ng-app="results" ng-controller="resultsController">
-                                    <h3>Results</h3>
-                                    <div id="result_accordion">
-
-                                        <h3 id="default_result_header"> Third Year</h3>
-                                        <div>
-                                            <h4 class="accordion-sub">GPA: {{result.thirdYear.gpa}} / 4.00</h4>
-                                            <div class="skill_table table-responsive">
-                                                <table style="width:100%">
-                                                    <tbody>
-                                                        <tr ng-repeat="subject in result.thirdYear.resultList | orderBy : 'grade'">
-                                                            <td>{{subject.subjectName}}<span>{{subject.grade}}</span></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <h3 id="accordion_header"> Second Year</h3>
-                                        <div>
-                                            <h4 class="accordion-sub">GPA: {{result.secondYear.gpa}} / 4.00</h4>
-                                            <div class="skill_table table-responsive">
-                                                <table style="width:100%">
-                                                    <tbody>
-                                                        <tr ng-repeat="subject in result.secondYear.resultList | orderBy : 'subjectName'"
-                                                            ng-switch on="$index % 2">
-                                                            <td ng-switch-when="0">
-                                                                {{result.secondYear.resultList[$index].subjectName}} <span>{{result.secondYear.resultList[$index].grade}}</span>
-                                                            </td>
-                                                            <td ng-switch-when="0">
-                                                                {{result.secondYear.resultList[$index+1].subjectName}} <span>{{result.secondYear.resultList[$index+1].grade}}</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <h3 id="accordion_header"> First Year</h3>
-                                        <div>
-                                            <h4 class="accordion-sub">GPA: {{result.firstYear.gpa}} / 4.00</h4>
-
-                                            <div class="skill_table table-responsive">
-                                                <table style="width:100%">
-                                                    <tbody>
-                                                        <tr ng-repeat="subject in result.firstYear.resultList | orderBy : 'subjectName'"
-                                                            ng-switch on="$index % 2">
-                                                            <td ng-switch-when="0">
-                                                                {{result.firstYear.resultList[$index].subjectName}} <span>{{result.firstYear.resultList[$index].grade}}</span>
-                                                            </td>
-                                                            <td ng-switch-when="0">
-                                                                {{result.firstYear.resultList[$index+1].subjectName}} <span>{{result.firstYear.resultList[$index+1].grade}}</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                             <!--ACCORDION END-->
-
-
-                </div><!--end of container-->
-                <!--RESULTS END--> 
-                
-                
-                
-                
-                
-                
-                
-                 <!--CONTACT START-->
-                              <div id="contact" class="container">
-
-                                  <br><!-- break for a little spacing-->
-                               
+                                  
+                                  
                                   <br><!-- break for a little spacing-->
                                   <div class="row">
                                     <div class="col-sm-6">
@@ -280,7 +204,7 @@
                                     </div>
                                   </div><!--end of row-->
                                 </div><!--end of container-->
-                <!--CONTACT END-->  
+                <!--PROJECTS END-->             
                                   <footer style="text-align:center; min-height:100px;">
                                     <p style="font-style:italic;">aaron fogarty 2016</p>
                                   </footer>
@@ -342,21 +266,20 @@
     </div><!-- End of Modal -->
  <!---CONTACT MODAL FORM END ----> 
         
-
+        
+        
+        
         
         <!---SCRIPTS-->
         
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
-        <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/results.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/style.css" />
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>-->
-        
-        <script src="js/accordion.js"></script>
-        <script src="js/resultAccordion.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+        <script src="js/results.js"></script>
         <script src="js/imagemodal.js"></script>     
   
       

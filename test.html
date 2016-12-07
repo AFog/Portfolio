@@ -36,10 +36,88 @@
     </div>
   </div>
 </nav>
+        
+         <!--ACCORDION START-->
+                                        
+                    <div id="results" class="tab-pane fade results" ng-app="results" ng-controller="resultsController">
+                        <h3>Results</h3>
+                        <div id="result_accordion">
+
+                            <h3 id="default_result_header"> Third Year</h3>
+                            <div>
+                                <h4 class="accordion-sub">GPA: {{result.thirdYear.gpa}} / 4.00</h4>
+                                <div class="skill_table table-responsive">
+                                    <table style="width:100%">
+										<tbody >
+                                            <tr ng-repeat="subject in result.thirdYear.resultList | orderBy : 'grade'">
+                                                <td>{{subject.subjectName}}<span>{{subject.grade}}</span></td>
+                                            </tr>
+										</tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <h3 id="accordion_header"> Second Year</h3>
+                            <div>
+                                <h4 class="accordion-sub">GPA: {{result.secondYear.gpa}} / 4.00</h4>
+                                <div class="skill_table table-responsive">
+								
+
+								
+                                  <table style="width:100%">
+										<tbody >
+								<tr ng-repeat="subject in result.secondYear.resultList" ng-switch on="$index % 2">
+                                              <td ng-switch-when="0">
+                                                {{resultList[$index].subjectName}} {{resultList[$index].grade}}
+                                              </td>
+                                              <td ng-switch-when="0">
+                                                <span ng-show="resultList[$index+1]">
+                                                {{resultList[$index].subjectName}} {{resultList[$index].grade}}
+                                                </span>
+                                              </td>
+                                            </tr>
+										</tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <h3 id="accordion_header"> First Year</h3>
+                            <div>
+                                <h4 class="accordion-sub">GPA: {{result.firstYear.gpa}} / 4.00</h4>
+
+                                <div class="skill_table table-responsive">
+                                                                        <table style="width:100%">
+										<tbody >
+                                            <tr ng-repeat="subject in result.firstYear.resultList | orderBy : 'subjectName'">
+                                                <td>{{subject.subjectName}}<span>{{subject.grade}}</span></td>
+                                            </tr>
+										</tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+	  
+                 <!--ACCORDION END-->
+        
+        
+        
 	
-	
-	
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+        <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>-->
+        
+        <script src="js/results.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/resultAccordion.js"></script>
+        <script src="js/imagemodal.js"></script>     
+  
 	
 	</body>
-	</head>
 	</html>

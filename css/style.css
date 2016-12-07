@@ -9,7 +9,8 @@ body {
 }
 .jumbotron{
   margin-bottom:0 !important;
-  background:rgba(255,255,255) !important;
+ /* background:rgba(255,255,255,.9) !important;*/
+  background:rgba(34,34,34,.9) !important;
   padding-top: 5px;
   padding-bottom: 9px;
 }
@@ -19,8 +20,8 @@ body {
 
 .aboutmetext{
     font-size: 1.5em;
-    color:white;
-    color:rgb(34,34,34);
+    color:black;
+    /*color:rgb(34,34,34);*/
 
 }
 .paragraph{
@@ -29,25 +30,86 @@ body {
 
 }
 
+
+/*----------------------------------------------------- Jumbo parallax -------------------------- */
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    /*background:rgb(20,20,20); background-image: url(/images/backgroundparallax.jpg)
+*/
+    background:rgb(34,34,34);
+    /*background:rgb(255,255,255);*/
+ 
+}
+.parallax__group {
+    height: 260px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease 0s;
+    z-index:100;
+    height:100%;
+
+}
+.parallax__layer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0px);
+    z-index: 4;
+}
+.parallax__layer--back {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+    height:45%;
+}
+body, html {
+    overflow: hidden;
+}
+.parallax {
+    font-size: 100%;
+}
+img.codepen_image {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    transform: translate(-50%, -65%);
+    width:90%;
+}
+#group1 {
+    z-index: 3;
+    height:50%;
+}
+#group1 .parallax__layer--back {
+}
+
+
 /*---------------------------------------------Soial media links-------------------------------------------*/
 
 .icoFacebook{
-    font-size: 29px;
+    font-size: 27px;
 }
 .icoGoogle{
-    font-size: 29px;
+    font-size: 27px;
     
 }
 .icoLinkedin{
-    font-size: 29px;
+    font-size: 28px;
     
 }
 .icoTwitter{
-    font-size: 29px;
+    font-size: 28px;
     
 }
 .icoCV{
-    font-size: 29px;
+    font-size: 27px;
     
 }
 /*---------------------------------------------Carousel-------------------------------------------*/
@@ -96,66 +158,6 @@ body {
   left: 40px; 
 }
 
-
-/*----------------------------------------------------- Jumbo parallax -------------------------- */
-.parallax {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 300px;
-    /*background:rgb(20,20,20); background-image: url(/images/backgroundparallax.jpg)
-*/
-    background:rgb(34,34,34);
- 
-    
-}
-.parallax__group {
-    height: 260px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease 0s;
-    z-index:100;
-    height:100%;
-
-}
-.parallax__layer {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.parallax__layer--base {
-    transform: translateZ(0px);
-    z-index: 4;
-}
-.parallax__layer--back {
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-    height:45%;
-}
-body, html {
-    overflow: hidden;
-}
-.parallax {
-    font-size: 100%;
-}
-img.codepen_image {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 70%;
-    transform: translate(-50%, -65%);
-    width:90%;
-}
-#group1 {
-    z-index: 3;
-    height:50%;
-}
-#group1 .parallax__layer--back {
-}
-                   
 /*----------------------------------------------------MODAL CONTACT FORM------------------------------------------------*/
 
 .modal {
@@ -235,6 +237,75 @@ top: 40px;
         width: 100%;
     }
 }
-                 
-             
+                
 
+/*---------------------------------------------------------Accordian---------------------------*/
+.accordion h3 {
+    width: 100%;
+    height: 50px;
+}
+#accordion .ui-accordion-header {
+    background-color: #ffffff;
+    border: none;
+    height: 45px;
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #0088ff;
+    z-index: 1.0;
+}
+#accordion .ui-accordion-content {
+    border: none;
+    width: 100%;
+    line-height: 16pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#accordion .ui-icon {
+    display: none;
+}
+#result_accordion .ui-icon {
+    display: none;
+}
+#result_accordion .ui-accordion-header {
+    background-color: #ffffff;
+    border: none;
+    height: 45px;
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #0088ff;
+}
+#result_accordion .ui-accordion-content {
+    border: none;
+    width: 100%;
+    height: 100%;
+    line-height: 16pt;
+}
+#result_accordion .ui-icon {
+    display: none;
+}
+.ui-accordion-header.ui-state-default:before {
+    content: "\f067";
+    font-family: FontAwesome;
+    border: none;
+}
+.ui-accordion-header.ui-state-active:before {
+    content: "\f068";
+    font-family: FontAwesome;
+    border: none;
+}
+.ui-accordion-header {
+    outline: none;
+}
+.accordion-sub {
+    width: 100%;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: white;
+}
