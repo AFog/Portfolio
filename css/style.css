@@ -9,7 +9,7 @@ body {
 }
 .jumbotron{
   margin-bottom:0 !important;
-  background:rgba(255,255,255,.9) !important;
+  background:rgba(255,255,255) !important;
   padding-top: 5px;
   padding-bottom: 9px;
 }
@@ -32,43 +32,39 @@ body {
 /*---------------------------------------------Soial media links-------------------------------------------*/
 
 .icoFacebook{
-    font-size: 30px;
+    font-size: 29px;
 }
 .icoGoogle{
-    font-size: 30px;
+    font-size: 29px;
     
 }
 .icoLinkedin{
-    font-size: 30px;
+    font-size: 29px;
     
 }
 .icoTwitter{
-    font-size: 30px;
+    font-size: 29px;
     
 }
 .icoCV{
-    font-size: 30px;
+    font-size: 29px;
     
 }
 /*---------------------------------------------Carousel-------------------------------------------*/
 
-@media (min-width:800px){
-   .slide_1 {
+@slide_1 (min-width:800px){
     height: inherit;
     background:rgb(182,186,246);
-    padding: 100px;
-    margin-bottom: 20px;
-       
-} 
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
 .aboutmetext{
     font-size: 1.2em;
     color:white;
     color:rgb(34,34,34);
 
 }
-    
-}
-
 
 .slide_1 {
     height: inherit;
@@ -110,6 +106,7 @@ body {
     /*background:rgb(20,20,20); background-image: url(/images/backgroundparallax.jpg)
 */
     background:rgb(34,34,34);
+ 
     
 }
 .parallax__group {
@@ -158,40 +155,48 @@ img.codepen_image {
 }
 #group1 .parallax__layer--back {
 }
+                   
+/*----------------------------------------------------MODAL CONTACT FORM------------------------------------------------*/
+
+.modal {
+position: fixed;
+right: o;
+top: 40px;
+}
+.modal-header,
+.btn-custom {
+	background: grey;
+	color: #FFF;
+	/* margin-right: 10px; */
+}
+.modal-body {
+	background: grey;
+}
+.popover   {
+	background-color: blue;
+	color: blue;
+	width: 120px;
+}
+.popover.right .arrow:after {
+	border-right-color: blue;
+}
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 
 /*------------------------------------------------ Modal image --------------------------------- */
-
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+#myImgAaron {
     /*border-radius: 5px;*/
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImgAaron:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
 
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 30%;
-    max-width: 700px;
-}
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -203,6 +208,7 @@ img.codepen_image {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    color:black;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -223,29 +229,12 @@ img.codepen_image {
     to {transform:scale(1)}
 }
 
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 55px;
-    right: 23px;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
 }
-
+                 
+             
 

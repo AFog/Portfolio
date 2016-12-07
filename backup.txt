@@ -198,43 +198,4 @@ working tutoril navbar
                  
                  
                  
-                    <div class="row">
-                      <div class="col-sm-6"> 
-                        <h2>About</h2>
-                        <p>This example demonstrates how easy it is to get up and running with Bootstrap.
-                      You can load bootstrap on your own server, or from the cloud @ <a href="http://www.bootstrapcdn.com/">BootstrapCDN</a> as I'm doing so here in this example.</p>
-                      </div>
-
-                      <div class="col-sm-6">        
-                        <h2 class="cow">Holy Cow</h2>
-                        <p>Bootstrap components make it easy to create responsive templates without having to write hardly any css.</p>
-                        <p>SAY WHAT!</p>
-                    </div>
-                  </div><!-- end of row*/ -->
-
-                  <div class="row"> 
-                    <div class="col-sm-2">
-                      <h3>Rows</h3>
-                      <p>This is the first column contained in a row, rows are defined by a CSS class called <strong>row</strong></p>
-                    </div>
-                    <div class="col-sm-2">
-                      <h3>Columns</h3>
-                      <p>This is the second column in the row.  Each row can have up to a number of 12 columns</p>
-                    </div>
-                    <div class="col-sm-2">
-                      <h3>Numbers</h3>
-                      <p>This is the third column, and takes up the width of 2 out of 12 possible columns.</p>
-                    </div>
-                    <div class="col-sm-2">
-                      <h3>Component</h3>
-                      <p>Bootstrap has predefined CSS classes in order to easily setup columns.  There are also many reusable components built-in to provide dropdowns, input groups, navigation, alerts, iconography, and much more.</p>
-                    </div>
-                    <div class="col-sm-2">
-                      <h3>Define</h3>
-                      <p>Each column in this row takes up 2 out of 12 columns possible. This is defined by the CSS class <strong>.col-sm-2</strong></p>
-                    </div>
-                    <div class="col-sm-2">
-                      <h3>Also</h3>
-                      <p>If you wanted, let's say, 3 columns in a row, you would use this CSS class <strong>.col-sm-4</strong>.  Below is another example of that happening.  You can find out more about components <a href="http://getbootstrap.com/components/">here</a></p>
-                    </div>
-                  </div><!--end of row-->
+                   -
