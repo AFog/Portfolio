@@ -118,15 +118,3 @@ results.controller("resultsController",
         }
     });
 	
-var skills = angular.module("skillset", []);
-
-skills.controller("skillsController",
-    function educationController($scope) {
-        $scope.skills = 
-			["JAVA", "C#", "C++", "HTML & CSS", "SQL", "REST APIs", "GITHUB", "UNIX CMD", "WINDOWS CMD", "JSON & XML", "JACKSON", "TESTING"]
-	
-	
-	});
-	
-angular.bootstrap(document.getElementById("skillTable"), ['skillset']);
-angular.bootstrap(document.getElementById("results"), ['results']);
