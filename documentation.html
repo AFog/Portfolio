@@ -5,50 +5,56 @@
     <title></title>
 </head>
 <body>
-<div id="Inroduction" class="container-fluid">
+<div id="Overview" class="container-fluid">
     <h1>Inroduction</h1>
     <ul>
-        <li>This webpage was built from scratch and no template was used. I added all features by using examples and tuutorials from www.w3schools.com, getbootstrap.com, youtube.com and several other websites. </li>
+        <li>This webpage was built from scratch and no template was used. I added all features by using examples and tutorials from www.w3schools.com, getbootstrap.com, youtube.com and several other websites. </li>
         <li>To begin I looked for a CV webpages that I liked and wrote down the feature they used that I would like to incorporate into my page</li>
-        <li>The project is hosted on <a href="https://shaydaly.github.io/IMD-WEB-CV/IMD-CA-2/IMD-CA/" target="_blank">GitHub Pages</a></li>
+        <li>The project is hosted on <a href="http://www.aaronfogarty.com/" target="_blank">aaronfogarty.com</a></li>
+        <li>The project is available at <a href="https://github.com/AFog/Portfolio" target="_blank">GitHub</a></li>
     </ul>
 </div>
 <div id="DynamicContent" class="container-fluid">
 <h1>Dynamic Content</h1>
-    <ul><li>For the dynamic aspects of the project  I used AngularJS.</li>
-    <li>First to read my previous
-        exam results in from a json file this involved the use of the  ng-app & ng-repeat.
-    This allowed the results to be added dynamically, as opposed to having to manually
-    add each on to the html file.</li>
-        <li>This method was also used for the dynamic retrieval of my skills and proficiency in each</li>
-        <img src="assets/images/snapshots/skills.PNG" style="width:500px;height:200px;">
-        <li>I also used angular to get the current date and time to display in the footer. This is loaded
-    dynamically every time a user comes to the page</li>
-        <li>To enable multiple angular components required them to be manually bootstrapped
+    <ul><li>I used AngularJS  to create some dynamic content</li>
+    <li> I dynamically added my exam results from a file rather than having to manually input the values. This can be seen in the Results JQuery Accordion</li>
+    <li>I also dynamically added the current date and time. Thuis can be seen in the footer of the page.</li>
+    <li>Enabling multiple angular components requires manually bootstrapping each of them 
         using the angular.bootstrap command</li>
+        
+    <br>
+    <li>I used googe maps api to show my home adress in the contact section of the page. This required creating a google project enabling Maps JavaScript access and getting an API key to connect</li>    
     </ul>
 </div>
 
 <div class="container-fluid" id="InteractiveElement">
 <h2>Interactive Elements</h2>
     <ul>
-        <li>There was a mixture of CSS and JQuery involved</li>
-        <li> Modals were used to enlarge the profile picture, along with my third year project image</li>
-        <li>Modals were also used for the Contact form. The contact form is fully functional, it uses 'JotForm' to sends an email to my account when
-        a user enters the form.</li>
-        <img src="assets/images/snapshots/contact.PNG">
-        <li>A Bootstrap Carousel was also used in the second year project to scroll through the different images</li>
-        <li>JS Tab (tab.js) was used to display the main content on the pages. This allowed the user to pick their page from the nav bar and
-        only that page would be displayed to the user</li>
-        <li>JQuery accordian was used for the results section to allow the user to expand, hide the results for the different years by clicking on the year</li>
+        <li>I found many elements to use at W3schools and getbootstrap</li>
+        <li>I used a parallax to create the page heading that has my name, this is a nice feature and can be seen on a lot of the nicest web CVs.I aslo use a BS jumbotron in the header to show my photo and title</li>
+        <li>The image in the jumbotron is a Modal and enlarges the image for closer view</li>
+        <li>I aso used a Modal for one of my contact forms. This can be seen in the about section beside the social media images. This is a functional form, any messages submitted are sent to my email address. This feature was possible using 'JotForm' </li>
+        <li>For the whole about section I used a carousel to display differnet sections of my CV. I seen this feature and like it and built my own version into the page</li>
+        <li>I also used carousels in the Projects section to display project images</li>
+        <li>The CV is built for multiple devices and works on mobile, I used a Grid system to enable this</li>
+        <li>The Navnbar menu changes to a dropdown menu in mobile devices</li>
+       
         <li>Navbar Toggle was used to replace the navbar with a button with arrows, on smaller screens</li>
-        <img src="assets/images/snapshots/navbarBefore.PNG"><br>
-        <img src="assets/images/snapshots/navbarAfter.PNG">
-
+<br>
+<h3>Elements used</h3>
+        <li>BS Grid System</li>
+        <li>BS Navbar</li>
+        <li>BS Buttons</li>
+        <li>Parallax</li>
+        <li>Jumbotron</li>
+        <li>Image Modal</li>
+        <li>Carousel</li>
+        <li>Contact Modal with working email</li>
+        <li>Tables</li>
+        <li>DropDown menu</li>
+        <li>Form</li>
     </ul>
 </div>
 
-<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
