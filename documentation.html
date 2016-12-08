@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="Inroduction" class="container-fluid">
+    <h1>Inroduction</h1>
+    <ul>
+        <li>This webpage was built from scratch and no template was used. I added all features by using examples and tuutorials from www.w3schools.com, getbootstrap.com, youtube.com and several other websites. </li>
+        <li>To begin I looked for a CV webpages that I liked and wrote down the feature they used that I would like to incorporate into my page</li>
+        <li>The project is hosted on <a href="https://shaydaly.github.io/IMD-WEB-CV/IMD-CA-2/IMD-CA/" target="_blank">GitHub Pages</a></li>
+    </ul>
+</div>
+<div id="DynamicContent" class="container-fluid">
+<h1>Dynamic Content</h1>
+    <ul><li>For the dynamic aspects of the project  I used AngularJS.</li>
+    <li>First to read my previous
+        exam results in from a json file this involved the use of the  ng-app & ng-repeat.
+    This allowed the results to be added dynamically, as opposed to having to manually
+    add each on to the html file.</li>
+        <li>This method was also used for the dynamic retrieval of my skills and proficiency in each</li>
+        <img src="assets/images/snapshots/skills.PNG" style="width:500px;height:200px;">
+        <li>I also used angular to get the current date and time to display in the footer. This is loaded
+    dynamically every time a user comes to the page</li>
+        <li>To enable multiple angular components required them to be manually bootstrapped
+        using the angular.bootstrap command</li>
+    </ul>
+</div>
+
+<div class="container-fluid" id="InteractiveElement">
+<h2>Interactive Elements</h2>
+    <ul>
+        <li>There was a mixture of CSS and JQuery involved</li>
+        <li> Modals were used to enlarge the profile picture, along with my third year project image</li>
+        <li>Modals were also used for the Contact form. The contact form is fully functional, it uses 'JotForm' to sends an email to my account when
+        a user enters the form.</li>
+        <img src="assets/images/snapshots/contact.PNG">
+        <li>A Bootstrap Carousel was also used in the second year project to scroll through the different images</li>
+        <li>JS Tab (tab.js) was used to display the main content on the pages. This allowed the user to pick their page from the nav bar and
+        only that page would be displayed to the user</li>
+        <li>JQuery accordian was used for the results section to allow the user to expand, hide the results for the different years by clicking on the year</li>
+        <li>Navbar Toggle was used to replace the navbar with a button with arrows, on smaller screens</li>
+        <img src="assets/images/snapshots/navbarBefore.PNG"><br>
+        <img src="assets/images/snapshots/navbarAfter.PNG">
+
+    </ul>
+</div>
+
+<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
