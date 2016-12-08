@@ -5,13 +5,13 @@ results.controller("resultsController",
         $scope.result = {
 
             thirdYear: {
-                gpa: "3.86",
+                gpa: "3.43",
                 resultList: [{
                     subjectName: "Work Placement",
                     grade: "Pass"
                 }, {
                     subjectName: "Project",
-                    grade: "A"
+                    grade: "B"
                 }, {
                     subjectName: "Advanced Databases",
                     grade: "A"
@@ -20,21 +20,21 @@ results.controller("resultsController",
                     grade: "B+"
                 }, {
                     subjectName: "Innovation",
-                    grade: "B+"
+                    grade: "B"
                 }, {
                     subjectName: "Operation Systems",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Web Design 2",
                     grade: "A"
                 }, {
                     subjectName: "Algorithms and Data Structures",
-                    grade: "A"
+                    grade: "B+"
                 }]
             },
 
             secondYear: {
-                gpa: "4.00",
+                gpa: "3.88",
                 resultList: [{
                     subjectName: "Information Security",
                     grade: "A"
@@ -46,7 +46,7 @@ results.controller("resultsController",
                     grade: "A"
                 }, {
                     subjectName: "Networking 1",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Networking 2",
                     grade: "A"
@@ -58,13 +58,13 @@ results.controller("resultsController",
                     grade: "A"
                 }, {
                     subjectName: "Web Design",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Discrete Maths 2",
                     grade: "A"
                 }, {
                     subjectName: "Database 2",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Software Devlopment 3",
                     grade: "A"
@@ -75,19 +75,19 @@ results.controller("resultsController",
             },
 
             firstYear: {
-                gpa: "3.86",
+                gpa: "3.21",
                 resultList: [{
                     subjectName: "Operating Systems",
-                    grade: "A"
+                    grade: "C+"
                 }, {
                     subjectName: "Database Fundamentals",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Statistics",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "System Analysis",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Software Development 1",
                     grade: "A"
@@ -96,34 +96,25 @@ results.controller("resultsController",
                     grade: "A"
                 }, {
                     subjectName: "Discrete Maths",
-                    grade: "A"
+                    grade: "B-"
                 }, {
                     subjectName: "Business Systems",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Interface Design",
                     grade: "B+"
                 }, {
                     subjectName: "Social Media",
-                    grade: "A"
+                    grade: "B+"
                 }, {
                     subjectName: "Learning to Learn",
-                    grade: "B"
+                    grade: "C+"
                 }, {
                     subjectName: "Computer Architecture",
-                    grade: "A"
+                    grade: "B+"
                 }]
 
             }
         }
     });
-
-
-var app = angular.module('DateApp', [])
-app.controller('dateController', function ($scope) {
-    $scope.CurrentDate = new Date();
-});
-
-angular.bootstrap(document.getElementById("RESULTS"), ['education']);
-angular.bootstrap(document.getElementById("TODAY"), ['DateApp']);
 	

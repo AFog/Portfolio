@@ -19,8 +19,8 @@ body {
 }
 
 .aboutmetext{
-    font-size: 1.5em;
-    color:black;
+    font-size: 10em;
+    color:darkgrey;
     /*color:rgb(34,34,34);*/
 
 }
@@ -54,17 +54,22 @@ body {
     min-height:100px;
     color:darkgrey;
     font-style:italic;
-    padding-top: 50px;
 }
-.thumbnails{
- 
-}
+
 .imgtable{
     height: 50px;
     width: inherit;
 }
+.imgtableED{
+    height: 65px;
+    width: inherit;
+}
 .tableimg{
     border: none;
+}
+
+.tableskill{
+    float: left;
 }
 
 /*----------------------------------------------------- Jumbo parallax -------------------------- */
@@ -148,7 +153,6 @@ img.codepen_image {
     font-size: 27px;
     
 }
-
 .medialinksbottom{
     padding-top: 80px;
     padding-left: 0px;
@@ -160,22 +164,23 @@ img.codepen_image {
     font-size: 1.2em;
     color:white;
     color:rgb(34,34,34);
-
 }
 
 .slide_1 {
-    height: inherit;
+    height: 790px;
     background:rgb(182,186,246);
     padding: 100px;
     margin-bottom: 20px;
 }
 
-
-@slide_1 (min-width:800px){
-    height: inherit;
+@media (min-width: 800px){
+   .slide_1 {
+    height: 550px;
     background:rgb(182,186,246);
-    padding: 50px;
-    margin-bottom: 10px;
+    padding: 100px;
+    margin-bottom: 20px;
+} 
+    
 }
 
 .carousel-indicators li {
