@@ -70,7 +70,22 @@ body {
 
 .tableskill{
     float: left;
+    height:300px;
+    width: 250px;
+    padding-top: 70px;
+    padding-left: 0;
+    margin-left: -10px
 }
+
+@media (min-width: 800px){
+.tableskill{
+    float: left;
+    height:inhert;
+    width: inherit;
+}
+}
+
+
 .h5css{
     color:darkslategray;
     font-weight: bold;
@@ -181,7 +196,7 @@ img.codepen_image {
 }
 
 .slide_1 {
-    height: 790px;
+    height: 1900px;
     background:rgb(182,186,246);
     padding: 100px;
     margin-bottom: 20px;
