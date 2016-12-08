@@ -189,13 +189,118 @@ working tutoril navbar
                  
                  
                  
+     
+     
+     
+     
+     
+     
+     
+     
+     <!--PROJECTS START-->
+                 
+                <div class="container projecttext" id="projects">
+                     <br><!-- break for a little spacing-->
+
+                    <br><!-- break for a little spacing-->
+                     <h3>PROJECTS</h3>
+                            <div class="container projecttext" id="projects">
+                               
+                               
+                                <div class="row padding" id="one">
+                                    <div class="col-md-6">
+                                     <img src="images/3rdyearproject.png" class="img-circle img-responsive" alt="Circular holding image"/>
+                                    </div>
+                                    <img id="myImg" src="img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200">
+                                    <div class="col-md-6">
+                                        <h2 class="text-center">4th Year</h2>
+                                        <h4>HuH (SDE)<br>4th Year Individua Project</h4>
+                                        <p class="text-justify">“huh” is designed to be a Multilingual Conversion Messaging Android Application. Like its name it should be low effort when used but capable of mediating conversations where there is no common ground between participants. The Application will be similar to WhatsApp and other messaging applications in its presentation. It will allow users to select the language they wish to read their messages in. its purpose is to provide users with an easy way to communicate through language barriers. </p>
+
+                                    </div>
+                                </div>	
+                                <hr />
+
+                                <div class="row padding" id="two">
+                                    <div class="col-md-6">
+                                        <h2 class="text-center">3rd Year</h2>
+                                        <h4>Splunk-Data-Enricher (SDE)<br> Internship Project Fidelity Investments</h4>
+                                        <p class="text-justify">SDE is a tool that helps to add more meaningful information to your events within Splunk. Splunk provides a lookups feature that allows you to reference fields in a csv file. SDE helps you build these csv files by collecting its data from People Central. SDE was developed as a solution to the removal of the Splunk LDAP add-on. Many of our Dashboards relied on the data provided by the LDAP add-on and so a replacement was needed. Because it can be time consuming compiling all of the required details of every user into a csv file the SDE is designed to provide an auto-generated csv file to be used as a lookup in Splunk. SDE takes in a list of corporate IDs and returns a csv file based on your chosen attributes from the People Central Data Dictionary.</p>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/3rdyearproject.png" class="img-circle img-responsive" alt="Circular holding image"/>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row padding" id="three">
+                                    <div class="col-md-6">
+                                        <img src="images/3rdyearproject.png" class="img-circle img-responsive" alt="Circular holding image"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="text-center">2nd Year</h2>
+                                        <h4>Games Direct<br> 2nd Year MVC Group Project</h4>
+                                        <p class="text-justify">A group project involving the development of a persistent retail web application, where users could create sessions edit/modify account details stored on a local database. Features included encrypted account authorization and privileged administrative access, input validation, data modification and updating. We were the first and only 2nd year group to undertake the project using the Play Framework.</p>	
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+
+                <!--PROJECTS END-->
                  
                  
                  
                  
                  
                  
-                 
-                 
+                 <!---CONTACT MODAL FORM  ---->  
+         <div id="myModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Contact Me</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" name="commentform">
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="first_name">First Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="last_name">Last Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="email">Email Address</label>
+                            <div class="col-md-6 input-group">
+                            <span class="input-group-addon">@</span>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="comment">Question or Comment</label>
+                            <div class="col-md-6">
+                                <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+               
+                    
+                </div><!-- End of Modal body -->
+                </div><!-- End of Modal content -->
+                </div><!-- End of Modal dialog -->
+    </div><!-- End of Modal -->
+ <!---CONTACT MODAL FORM END ----> 
                  
                    -

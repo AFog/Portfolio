@@ -19,7 +19,7 @@ body {
 }
 
 .aboutmetext{
-    font-size: 10em;
+    font-size: 1.5em;
     color:darkgrey;
     /*color:rgb(34,34,34);*/
 
@@ -33,7 +33,7 @@ body {
 }
 
 .projecttext{
-    font-size: 1.5em;
+    font-size: 1.1em;
     color:darkgrey;
     /*color:rgb(34,34,34);*/
 
@@ -286,7 +286,6 @@ top: 40px;
     }
 }
                 
-
 /*---------------------------------------------------------Accordian---------------------------*/
 .accordion h3 {
     width: 100%;
