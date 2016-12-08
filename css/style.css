@@ -71,6 +71,12 @@ body {
 .tableskill{
     float: left;
 }
+.h5css{
+    color:darkslategray
+    font-weight: bold;
+        
+}
+
 
 /*----------------------------------------------------- Jumbo parallax -------------------------- */
 .parallax {
@@ -160,10 +166,18 @@ img.codepen_image {
 /*---------------------------------------------Carousel-------------------------------------------*/
 
 
+.aboutmetextA{
+    font-size: 1.5em;
+    color:white;
+    color:rgb(34,34,34);
+    text-align: justify;
+}
+
 .aboutmetext{
     font-size: 1.2em;
     color:white;
     color:rgb(34,34,34);
+    text-align: justify;
 }
 
 .slide_1 {
@@ -172,6 +186,7 @@ img.codepen_image {
     padding: 100px;
     margin-bottom: 20px;
 }
+
 
 @media (min-width: 800px){
    .slide_1 {
